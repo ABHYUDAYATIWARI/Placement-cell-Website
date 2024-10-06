@@ -9,7 +9,7 @@ import Home from './pages/Home.jsx'
 import JobsList from './pages/JobsList.jsx'
 import SectorJobs from './pages/JobsListSector.jsx'
 import CategoryJob from './pages/JobsListCategory.jsx'
-
+import JobDetailPage from './pages/JobDetail.jsx'
 
 const router=createBrowserRouter([
   {
@@ -31,6 +31,10 @@ const router=createBrowserRouter([
       {
         path:'/category-jobs',
         element:<CategoryJob/>
+      },
+      {
+        path:'/job-detail/:id',
+        element:<JobDetailPage/>
       },
     ]
   }

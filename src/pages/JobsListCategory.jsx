@@ -42,7 +42,7 @@ const CategoryJob = () => {
                             ? `Jobs in Category: ${selectedCategory}`
                             : "All Jobs"}
                 </h1>
-
+                        
                 <ul className="space-y-4">
                     {filteredJobs.map((job, index) => (
                         <li key={index} className="bg-white p-4 rounded shadow">
