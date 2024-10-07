@@ -1,6 +1,7 @@
 # Job Recruitment Dashboard
 
 This project is a job recruitment dashboard built using **React** and **Tailwind CSS**. It allows users to view job listings, explore sectors and categories, and view job details.
+The site is live on [Click Here](https://placement-cell-website-hb7cmmbkd-abhyudayatiwaris-projects.vercel.app/)
 
 ## Features
 
