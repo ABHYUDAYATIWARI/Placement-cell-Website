@@ -34,14 +34,14 @@ This project is a job recruitment dashboard built using **React** and **Tailwind
     ```
 4. Start the development server:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Screenshots
 
 ### Home Page
 
-![Home Page](./src/assets/home.png)
+![Home Page](./src/assets/home.gif.gif)
 
 On the Home Page, clicking on a graph automatically applies the corresponding filter for job sectors or categories.
 
@@ -54,7 +54,7 @@ On the Job Listings page, users can explore a wide range of available job postin
 
 ### Filtered Job 
 
-![Job Listings](./src/assets/jobsort.png)
+![Job Listings](./src/assets/sort.gif.gif)
 
 On the Filtered Job Listings page, users can view job postings based on the applied filters such as sectors, categories, or other criteria.
 
