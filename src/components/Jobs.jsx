@@ -12,7 +12,7 @@ const JobList = ({ jobs }) => {
       {jobs.length > 0 ? (
         jobs.map((job, idx) => (
           <div key={idx} className="job-card flex">
-            <img src={logo} alt="" className="w-64 h-64"  />
+            <img src={logo} alt="" className="w-52 h-52"  />
             <button onClick={() => toDetails(job)}>
               <h2>{job.jobDesignation}</h2>
               <p><strong>Company:</strong> {job.name}</p>

@@ -80,7 +80,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1200000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -258,7 +258,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 2000000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -345,7 +345,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1500000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -433,7 +433,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 2500000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -521,7 +521,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1600000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -608,7 +608,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1900000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -696,7 +696,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1500000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -784,7 +784,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 1600000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }
@@ -871,7 +871,7 @@ export const Data = [
             "IT": 60,
             "ECE": 30
           },
-          "averageCTC": 900000,
+          "averageCTC": 2200000,
           "highestCTC": 2000000,
           "lowestCTC": 450000
         }

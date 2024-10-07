@@ -6,7 +6,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './pages/Home.jsx'
-import JobsList from './pages/JobsList.jsx'
+import JobsList from './pages/AllJobs.jsx'
 import SectorJobs from './pages/JobsListSector.jsx'
 import CategoryJob from './pages/JobsListCategory.jsx'
 import JobDetailPage from './pages/JobDetail.jsx'

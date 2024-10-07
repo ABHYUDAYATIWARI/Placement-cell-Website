@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Data as jobData } from '../assets/data'; // Job data array
 import Header from "../components/Header";
 
@@ -30,6 +30,11 @@ const CategoryJob = () => {
         }
         setFilteredJobs(jobs);
     }, [selectedSector, selectedCategory]);
+    const navigate = useNavigate();    
+  const toDetails = (job) => {
+    navigate(`/job-detail/${job.id}`); // Assuming each job has a unique 'id' field
+  };
+  const logo="https://img.freepik.com/premium-vector/minimalist-logo-design-any-corporate-brand-business-company_1253202-77511.jpg"
 
     return (
         <>
@@ -42,18 +47,21 @@ const CategoryJob = () => {
                             ? `Jobs in Category: ${selectedCategory}`
                             : "All Jobs"}
                 </h1>
-                        
+
                 <ul className="space-y-4">
-                    {filteredJobs.map((job, index) => (
-                        <li key={index} className="bg-white p-4 rounded shadow">
-                            <h2 className="text-xl font-semibold">{job.name}</h2>
-                            <p>Sector: {job.sector.join(", ")}</p>
-                            <p>Category: {job.category}</p>
-                            <p>Location: {job.postalAddress}</p>
-                            <a href={job.website} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-                                {job.website}
-                            </a>
-                        </li>
+                    {filteredJobs.map((job, idx) => (
+                        <div key={idx} className="job-card flex">
+                        <img src={logo} alt="" className="w-52 h-52"  />
+                        <button onClick={() => toDetails(job)}>
+                          <h2>{job.jobDesignation}</h2>
+                          <p><strong>Company:</strong> {job.name}</p>
+                          <p><strong>Sector:</strong> {job.sector.join(", ")}</p>
+                          <p><strong>Category:</strong> {job.category}</p>
+                          <p><strong>CTC:</strong> {job.recruitmentData.yearWiseRecruitmentTrends.at(-1).averageCTC}</p>
+                          <p><strong>Joining Date:</strong> {job.jobDetails.tentativeJoiningDate}</p>
+                          <p><strong>Location:</strong> {job.jobDetails.tentativeJobLocation}</p>
+                        </button>
+                      </div>
                     ))}
                 </ul>
             </div>
