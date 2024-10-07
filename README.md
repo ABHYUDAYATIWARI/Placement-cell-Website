@@ -34,7 +34,7 @@ This project is a job recruitment dashboard built using **React** and **Tailwind
     ```
 4. Start the development server:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Screenshots
