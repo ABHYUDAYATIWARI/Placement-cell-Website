@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../App.css';
 
 import JobFilters from '../components/Filter';
-import JobList from '../components/Jobs';
+import JobCard from '../components/JobCard';
 import { Data as jobData } from '../assets/data';
 import Header from '../components/Header';
 
@@ -25,9 +25,10 @@ const AllJobs = () => {
   // Sort filtered jobs based on CTC
   const sortedJobs = filteredJobs.sort((a, b) => {
     if (sortOption === "asc") {
-      return a.ctc - b.ctc; // Sort ascending
+      
+      return a.recruitmentData.yearWiseRecruitmentTrends.at(-1).averageCTC - b.recruitmentData.yearWiseRecruitmentTrends.at(-1).averageCTC; // Sort ascending
     } else if (sortOption === "desc") {
-      return b.ctc - a.ctc; // Sort descending
+      return b.recruitmentData.yearWiseRecruitmentTrends.at(-1).averageCTC - a.recruitmentData.yearWiseRecruitmentTrends.at(-1).averageCTC; // Sort descending
     } else {
       return 0; // Default no sorting
     }
@@ -48,7 +49,7 @@ const AllJobs = () => {
         sortOption={sortOption} // Pass sort option
         setSortOption={setSortOption} // Pass setSortOption function
       />
-      <JobList jobs={sortedJobs} /> {/* Use sorted jobs */}
+      <JobCard jobs={sortedJobs} /> {/* Use sorted jobs */}
 
     </div>
   );

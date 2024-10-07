@@ -39,8 +39,8 @@ const CategoryJob = () => {
     return (
         <>
             <Header/>
-            <div className="container mx-auto px-4 py-6">
-                <h1 className="text-3xl font-semibold mb-6">
+            <div className="container mx-auto px-4 py-6 ">
+                <h1 className="text-3xl font-semibold mb-6 mx-20">
                     {selectedSector
                         ? `Jobs in Sector: ${selectedSector}`
                         : selectedCategory
@@ -48,7 +48,7 @@ const CategoryJob = () => {
                             : "All Jobs"}
                 </h1>
 
-                <ul className="space-y-4">
+                <ul className="space-y-4 mx-20">
                     {filteredJobs.map((job, idx) => (
                         <div key={idx} className="job-card flex">
                         <img src={logo} alt="" className="w-52 h-52"  />

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const JobList = ({ jobs }) => {
+const JobCard = ({ jobs }) => {
   const navigate = useNavigate();
   const toDetails = (job) => {
     navigate(`/job-detail/${job.id}`); // Assuming each job has a unique 'id' field
@@ -31,4 +31,4 @@ const JobList = ({ jobs }) => {
   );
 };
 
-export default JobList;
+export default JobCard;
